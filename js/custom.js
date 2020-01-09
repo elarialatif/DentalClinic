@@ -99,7 +99,7 @@ jQuery(document).ready(function() {
         dots: false,
         autoplayTimeout: 6000,
         autoplayHoverPause: true,
-        navText: ["<i class='dental_icon dentalic_arrow_left'></i>", "<i class='dental_icon dentalic_arrow_right'></i>"],
+        navText: ["<img class='arrow_left'>", "<img class='arrow_right'>"],
         autoHeight: false,
         animateIn: 'fadeIn',
         animateOut: 'fadeOut'
@@ -113,7 +113,7 @@ jQuery(document).ready(function() {
         margin: 30,
         lazyLoad: true,
         dots: true,
-        navText: ["<i class='dental_icon dentalic_arrow_left'></i>", "<i class='dental_icon dentalic_arrow_right'></i>"],
+        navText: ["<img class='arrow_left'>", "<img class='arrow_right'>"],
         navContainer: '.presentation_row .navigation',
         nav: true,
         items: 1,
@@ -134,7 +134,7 @@ jQuery(document).ready(function() {
         dots: false,
         lazyLoad: true,
         stagePadding: 100,
-        navText: ["<i class='dental_icon dentalic_arrow_left'></i>", "<i class='dental_icon dentalic_arrow_right'></i>"],
+        navText: ["<img class='arrow_left'>", "<img class='arrow_right'>"],
         navContainer: '.certificates .navigation',
         nav: true,
         startPosition: 1,
@@ -154,7 +154,7 @@ jQuery(document).ready(function() {
         dots: true,
         margin: 30,
         stagePadding: 200,
-        navText: ["<i class='dental_icon dentalic_arrow_left'></i>", "<i class='dental_icon dentalic_arrow_right'></i>"],
+        navText: ["<img class='arrow_left'>", "<img class='arrow_right'>"],
         navContainer: '.gallery .navigation',
         nav: true,
         items: 1,
@@ -188,7 +188,7 @@ jQuery(document).ready(function() {
         loop: true,
         autoplay: false,
         autoplayHoverPause: true,
-        navText: ["<i class='dental_icon dentalic_arrow_left'></i>", "<i class='dental_icon dentalic_arrow_right'></i>"],
+        navText: ["<img class='arrow_left'>", "<img class='arrow_right'>"],
         autoHeight: false
     });
 

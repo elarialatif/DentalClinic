@@ -41,22 +41,22 @@
         
         @keyframes heartbeat {
             0% {
-                transform: scale(.75);
+                transform: scale( .75);
             }
             20% {
-                transform: scale(1);
+                transform: scale( 1);
             }
             40% {
-                transform: scale(.75);
+                transform: scale( .75);
             }
             60% {
-                transform: scale(1);
+                transform: scale( 1);
             }
             80% {
-                transform: scale(.75);
+                transform: scale( .75);
             }
             100% {
-                transform: scale(.75);
+                transform: scale( .75);
             }
         }
     </style>
@@ -81,19 +81,16 @@
                     var e = t.media || "all";
 
                     function a() {
-                        t.addEventListener ? t.removeEventListener("load", a) : t.attachEvent && t.detachEvent("onload",
-                            a), t.setAttribute("onload", null), t.media = e
+                        t.addEventListener ? t.removeEventListener("load", a) : t.attachEvent && t.detachEvent("onload", a), t.setAttribute("onload", null), t.media = e
                     }
-                    t.addEventListener ? t.addEventListener("load", a) : t.attachEvent && t.attachEvent("onload", a),
-                        setTimeout(function() {
-                            t.rel = "stylesheet", t.media = "only x"
-                        }), setTimeout(a, 3e3)
+                    t.addEventListener ? t.addEventListener("load", a) : t.attachEvent && t.attachEvent("onload", a), setTimeout(function() {
+                        t.rel = "stylesheet", t.media = "only x"
+                    }), setTimeout(a, 3e3)
                 }, o.poly = function() {
                     if (!o.support())
                         for (var t = n.document.getElementsByTagName("link"), e = 0; e < t.length; e++) {
                             var a = t[e];
-                            "preload" !== a.rel || "style" !== a.getAttribute("as") || a.getAttribute("data-loadcss") ||
-                                (a.setAttribute("data-loadcss", !0), o.bindMediaToggle(a))
+                            "preload" !== a.rel || "style" !== a.getAttribute("as") || a.getAttribute("data-loadcss") || (a.setAttribute("data-loadcss", !0), o.bindMediaToggle(a))
                         }
                 }, !o.support()) {
                 o.poly();
@@ -116,19 +113,12 @@
     <!-- Include font-awesome -->
     <link rel="stylesheet" href="css/font-awesome.css">
     <!-- Responsive style -->
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
+    <link rel="stylesheet" href="css/responsive.css"> </head>
 
-<body class="aboutus">
+<body>
     <div class="preloader">
         <div class="preloader_animation">
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-                <title>tooth</title>
-                <path
-                    d="M316.54,550.47q-.36-11.67-.49-23.35c-.32-29.6-3.9-54.78-20.56-80.11C267,403.74,257.7,355.76,259.33,304.82c2.28-71.37,41-119.16,106.45-129.85,27.08-4.43,53.58.75,77.24,13.22,39.56,20.84,77,20.66,116.95.4,36.4-18.44,75.57-21.17,113.88-4,49.7,22.24,68.94,64.74,72.32,115.8,3.4,51.34-5.7,100.28-34.33,144.21-15.55,23.86-22.15,49.18-21.54,78.24,1.56,74.77-2,149.53-26.7,221-7.93,22.95-21.69,44.37-35.56,64.59-8.61,12.55-22.56,22.56-40,16.29-18.35-6.58-21.13-23-24-40Q550.06,703.18,534.28,622c-2.4-12.27-7.56-24.4-13.58-35.43-4-7.3-11.45-14.23-18.13-18.78-26,23.21-34.19,59-40.75,91.83-8.53,42.71-13.64,86.1-20.28,129.19C439.2,804,435,818.11,418.83,824.61s-27.9-2.15-38.31-12.55c-28.2-28.15-41-64.47-47.69-102.06A1109.44,1109.44,0,0,1,316.54,550.47Zm280,246.39c24.2-16.59,33.23-39.12,40.48-62.18,21.11-67.18,26.58-136.72,25.11-206.41-.78-37,7.41-69.24,26-100.65C713.82,384.28,721.42,336.8,714.4,287c-6.48-46-36.84-78.7-82.21-81.59-20.48-1.3-43.19,4.24-62.15,12.78-45.39,20.44-89.11,22.89-133.8-.28-8.25-4.28-17.45-6.93-26.44-9.5-56.13-16.06-106.5,12.85-117.76,70.09-10.35,52.6-3.56,103.36,25.44,149.94,14.71,23.62,25.76,48.14,26.61,77.23,1.51,51.85,3.64,103.8,8.78,155.39,5,50.37,18.57,96.89,53.31,134.69,12.22-24.76,13-56.28,17.8-83.54,5.45-31.19,11.2-62.34,18.55-93.14,5.59-23.39,18.55-46.1,32.5-66.1,14.54-20.84,38.8-20.33,55.17-.66,10.4,12.5,20.06,27.18,24.82,42.51,11.42,36.79,21,74.28,28.92,112C589.9,735.18,592.16,764.35,596.57,796.87Z" />
-                <path
-                    d="M373.39,245c24.16,1.24,8.7,24.67,1.95,35a66.12,66.12,0,0,0-10.54,31.47c-1.73,24,5.75,48.89,16.55,70,5.17,10.11,16.85,31.45-1.32,36.23-11.24,3-21.82-11-26.53-19.34-8.17-14.48-12.69-31-15.79-47.19a157.15,157.15,0,0,1,4.49-75.53c3.89-12.67,15.61-30.93,30.59-30.71Z" />
-            </svg>
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><title>tooth</title><path d="M316.54,550.47q-.36-11.67-.49-23.35c-.32-29.6-3.9-54.78-20.56-80.11C267,403.74,257.7,355.76,259.33,304.82c2.28-71.37,41-119.16,106.45-129.85,27.08-4.43,53.58.75,77.24,13.22,39.56,20.84,77,20.66,116.95.4,36.4-18.44,75.57-21.17,113.88-4,49.7,22.24,68.94,64.74,72.32,115.8,3.4,51.34-5.7,100.28-34.33,144.21-15.55,23.86-22.15,49.18-21.54,78.24,1.56,74.77-2,149.53-26.7,221-7.93,22.95-21.69,44.37-35.56,64.59-8.61,12.55-22.56,22.56-40,16.29-18.35-6.58-21.13-23-24-40Q550.06,703.18,534.28,622c-2.4-12.27-7.56-24.4-13.58-35.43-4-7.3-11.45-14.23-18.13-18.78-26,23.21-34.19,59-40.75,91.83-8.53,42.71-13.64,86.1-20.28,129.19C439.2,804,435,818.11,418.83,824.61s-27.9-2.15-38.31-12.55c-28.2-28.15-41-64.47-47.69-102.06A1109.44,1109.44,0,0,1,316.54,550.47Zm280,246.39c24.2-16.59,33.23-39.12,40.48-62.18,21.11-67.18,26.58-136.72,25.11-206.41-.78-37,7.41-69.24,26-100.65C713.82,384.28,721.42,336.8,714.4,287c-6.48-46-36.84-78.7-82.21-81.59-20.48-1.3-43.19,4.24-62.15,12.78-45.39,20.44-89.11,22.89-133.8-.28-8.25-4.28-17.45-6.93-26.44-9.5-56.13-16.06-106.5,12.85-117.76,70.09-10.35,52.6-3.56,103.36,25.44,149.94,14.71,23.62,25.76,48.14,26.61,77.23,1.51,51.85,3.64,103.8,8.78,155.39,5,50.37,18.57,96.89,53.31,134.69,12.22-24.76,13-56.28,17.8-83.54,5.45-31.19,11.2-62.34,18.55-93.14,5.59-23.39,18.55-46.1,32.5-66.1,14.54-20.84,38.8-20.33,55.17-.66,10.4,12.5,20.06,27.18,24.82,42.51,11.42,36.79,21,74.28,28.92,112C589.9,735.18,592.16,764.35,596.57,796.87Z"/><path d="M373.39,245c24.16,1.24,8.7,24.67,1.95,35a66.12,66.12,0,0,0-10.54,31.47c-1.73,24,5.75,48.89,16.55,70,5.17,10.11,16.85,31.45-1.32,36.23-11.24,3-21.82-11-26.53-19.34-8.17-14.48-12.69-31-15.79-47.19a157.15,157.15,0,0,1,4.49-75.53c3.89-12.67,15.61-30.93,30.59-30.71Z"/></svg>
         </div>
     </div>
     <!-- Wrapper start -->
@@ -262,171 +252,156 @@
             </div>
         </header>
         <!-- HEADER end -->
+
         <!--  Main start -->
         <main>
-            <!-- About start -->
-            <div class="container about">
-                <div class="row">
-                    <!-- About left col start -->
-                    <div class="col-2 about_left">
-                        <div class="row">
-                            <h1>Welcome to Dental Clinic</h1>
-                            <div class="about_left_h2">
-                                At Dental Clinic we have petient-centered attitude that results in healthy, beautiful, long lasting smiles!
-                            </div>
-                            <div class="about_left_text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                            <a class="more">Learn more</a>
-                            <!-- Advantages start -->
-                            <div class="row advantages">
-                                <div class="advantages_item">
-                                    <strong>12</strong>
-                                    <span>years of experience</span>
-                                </div>
-                                <div class="advantages_item">
-                                    <strong>Hundreds</strong>
-                                    <span>happy clients</span>
-                                </div>
-                                <div class="advantages_item">
-                                    <strong>15</strong>
-                                    <span>awards in industry</span>
-                                </div>
-                            </div>
-                            <!-- Advantages end -->
-                        </div>
-                    </div>
-                    <!-- About left col end -->
 
-                    <!-- About right col start -->
-                    <div class="col-2 about_right">
-                        <!-- About image start -->
-                        <div class="row about_image">
-                            <!-- About image left col start -->
-                            <div class="col-2 about_image_left">
-                                <img class="lozad is-loaded" src="img/gallery_1.png" data-src="img/gallery_1.png" data-srcset="img/gallery_1.png, img/gallery_1@2x.png 2x" alt="DiDent" srcset="img/gallery_1.png, img/gallery_1@2x.png 2x" data-loaded="true">
-                                <img class="lozad is-loaded" src="img/gallery_2.png" data-src="img/gallery_2.png" data-srcset="img/gallery_2.png, img/gallery_2@2x.png 2x" alt="DiDent" srcset="img/gallery_2.png, img/gallery_2@2x.png 2x" data-loaded="true">
+            <!-- Service block top start -->
+            <div class="overflow_hidden">
+                <div class="radius_niz_mini">
+                    <div class="row header_title title_service">
+                        <div class="container">
+                            <div class="header_title_content">
+                                <h1>Services</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. </p>
+
                             </div>
-                            <!-- About image left col end -->
-                            <!-- About image right col start -->
-                            <div class="col-2 about_image_right">
-                                <img class="lozad is-loaded" src="img/gallery_3.png" data-src="img/gallery_3.png" data-srcset="img/gallery_3.png, img/gallery_3@2x.png 2x" alt="DiDent" srcset="img/gallery_3.png, img/gallery_3@2x.png 2x" data-loaded="true">
-                                <img class="lozad is-loaded" src="img/gallery_4.png" data-src="img/gallery_4.png" data-srcset="img/gallery_4.png, img/gallery_4@2x.png 2x" alt="DiDent" srcset="img/gallery_4.png, img/gallery_4@2x.png 2x" data-loaded="true">
-                                <img class="lozad is-loaded" src="img/gallery_5.png" data-src="img/gallery_5.png" data-srcset="img/gallery_5.png, img/gallery_5@2x.png 2x" alt="DiDent" srcset="img/gallery_5.png, img/gallery_5@2x.png 2x" data-loaded="true">
-                            </div>
-                            <!-- About image right col end -->
+                            <img src="img/img_tooth.png" class="absolute_img" data-srcset="img/img_tooth.png, img/img_tooth@2x.png 2x" alt="DiDent">
                         </div>
-                        <!-- About image end -->
                     </div>
-                    <!-- About right col end -->
                 </div>
             </div>
-            <!-- About end -->
+            <!-- Service block top end -->
 
-            <!-- Video start -->
-
-            <!-- Video end -->
-
-            <!-- Why We Are start -->
-            <div class="row why_we_are">
-                <div class="container">
-                    <h4>Why We Are the Best</h4>
-
-                    <div class="row why_we_are_content">
-                        <div class="row">
-                            <!-- Why We Are item start -->
-                            <div class="col-3 why_we_are_item">
-                                <div class="why_we_are_item_icon">
-                                    <img src="img/about1.png" class="dental_about_icon">
+            <!-- Service start -->
+            <div class="row services">
+                <div class="overflow_hidden">
+                    <div class="radius_row_niz services_row">
+                        <div class="container">
+                            <div class="row row-15">
+                                <!-- Service item start -->
+                                <div class="services_item">
+                                    <span class="services_item_title">Cosmetic Dentistry</span>
+                                    <span class="services_item_desc">Vineers, whitening, bonding, fillings etc.</span>
+                                    <img class="dental_imgIcon" src="img/molar.png" alt="">
                                 </div>
-                                <div class="why_we_are_item_title">Exсellent Doctors</div>
-                                <div class="why_we_are_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
-                            </div>
-                            <!-- Why We Are item end -->
-                            <!-- Why We Are item start -->
-                            <div class="col-3 why_we_are_item">
-                                <div class="why_we_are_item_icon">
-                                    <img src="img/about2.png" class="dental_about_icon">
+                                <!-- Service item end -->
+                                <!-- Service item start -->
+                                <div class="services_item">
+                                    <span class="services_item_title">General Dentistry</span>
+                                    <span class="services_item_desc">Cleanings, checkups, sleep apnea etc.</span>
+                                    <img class="dental_imgIcon" src="img/tooth.png" alt="">
                                 </div>
-                                <div class="why_we_are_item_title">Professional Staff</div>
-                                <div class="why_we_are_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
-                            </div>
-                            <!-- Why We Are item end -->
-                            <!-- Why We Are item start -->
-                            <div class="col-3 why_we_are_item">
-                                <div class="why_we_are_item_icon">
-                                    <img src="img/about3.png" class="dental_about_icon">
+                                <!-- Service item end -->
+                                <!-- Service item start -->
+                                <div class="services_item">
+                                    <span class="services_item_title">Restorations</span>
+                                    <span class="services_item_desc">Implants, crowns, dentures, bridges etc.</span>
+                                    <img class="dental_imgIcon" src="img/dental-implant.png" alt="">
                                 </div>
-                                <div class="why_we_are_item_title">Professional Staff</div>
-                                <div class="why_we_are_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
-                            </div>
-                            <!-- Why We Are item end -->
-                        </div>
-                        <div class="row">
-                            <!-- Why We Are item start -->
-                            <div class="col-3 why_we_are_item">
-                                <div class="why_we_are_item_icon">
-                                    <img src="img/about4.png" class="dental_about_icon">
+                                <!-- Service item end -->
+                                <!-- Service item start -->
+                                <div class="services_item">
+                                    <span class="services_item_title">Orthodontics</span>
+                                    <span class="services_item_desc">Invisalign, metal braces, expanders</span>
+                                    <img class="dental_imgIcon" src="img/tooth-with-braces.png" alt="">
                                 </div>
-                                <div class="why_we_are_item_title">Professional Staff</div>
-                                <div class="why_we_are_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
-                            </div>
-                            <!-- Why We Are item end -->
-                            <!-- Why We Are item start -->
-                            <div class="col-3 why_we_are_item">
-                                <div class="why_we_are_item_icon">
-                                    <img src="img/about5.png" class="dental_about_icon">
+                                <!-- Service item end -->
+                                <!-- Service item start -->
+                                <div class="services_item">
+                                    <span class="services_item_title">Oral Surgery</span>
+                                    <span class="services_item_desc">Dental extractions, root canals, tissue</span>
+                                    <img class="dental_imgIcon" src="img/oral.png" alt="">
                                 </div>
-                                <div class="why_we_are_item_title">Professional Staff</div>
-                                <div class="why_we_are_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
-                            </div>
-                            <!-- Why We Are item end -->
-                            <!-- Why We Are item start -->
-                            <div class="col-3 why_we_are_item">
-                                <div class="why_we_are_item_icon">
-                                    <img src="img/about6.png" class="dental_about_icon">
+                                <!-- Service item end -->
+                                <!-- Service item start -->
+                                <div class="services_item">
+                                    <span class="services_item_title">Pediatric Dentistry</span>
+                                    <span class="services_item_desc">Oral health of infants, children, adolescents</span>
+                                    <img class="dental_imgIcon" src="img/tooth-smile.png" alt="">
                                 </div>
-                                <div class="why_we_are_item_title">Professional Staff</div>
-                                <div class="why_we_are_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
+                                <!-- Service item end -->
+                                <!-- Service item start -->
+                                <div class="services_item">
+                                    <span class="services_item_title">Emergency Dentistry</span>
+                                    <span class="services_item_desc">Invisalign, metal braces, expanders</span>
+                                    <img class="dental_imgIcon" src="img/emergency.png" alt="">
+                                </div>
+                                <!-- Service item end -->
+                                <!-- Service item start -->
+                                <div class="services_item">
+                                    <span class="services_item_title">Preventative Dentistry</span>
+                                    <span class="services_item_desc">Dental extractions, root canals, tissue</span>
+                                    <img class="dental_imgIcon" src="img/preventative.png" alt="">
+                                </div>
+                                <!-- Service item end -->
+                                <!-- Service item start -->
+                                <div class="services_item">
+                                    <span class="services_item_title">Other Services</span>
+                                    <span class="services_item_desc">Oral health of infants, children, adolescents</span>
+                                    <img class="dental_imgIcon" src="img/toothbrush.png" alt="">
+                                </div>
+                                <!-- Service item end -->
                             </div>
-                            <!-- Why We Are item end -->
                         </div>
                     </div>
-
                 </div>
             </div>
-            <!-- Why We Are end -->
-
-
-
-            <!-- Gets start -->
-            <div class="row gets">
-                <div class="container">
-                    <h4>
-                        <i class="fa fa-quote-left "></i> A dentist gets to the root of the problem
-                    </h4>
-                    <!-- Gets text start -->
-                    <div class="col-1-60 gets_text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ad minim veniam, quis nostrud.
-                    </div>
-                    <!-- Gets text end -->
-                    <!-- Gets advantages start -->
-                    <div class="col-1-40 advantages">
-                        <div class="row advantages_item">
-                            <strong>100%</strong>
-                            <span>Guaranteed</span>
+            <!-- Service end -->
+            <!-- Presentation Start -->
+            <div class="row gallery presentation_row">
+                <div class="presentation_fon">
+                    <div class="block_color_blue radius_niz_mini"></div>
+                </div>
+                <div class="row presentation_gallery">
+                    <div class="container">
+                        <div class="row presentation_gallery_row">
+                            <h4>Patients</h4>
+                            <div class="navigation"></div>
                         </div>
-                        <div class="row advantages_item">
-                            <strong>17</strong>
-                            <span>Insurance options</span>
+                        <div class="presentation_carusel">
+                            <div class="presentation_title">Cosmetic Dentstry of New Generation</div>
+                            <div class="row presentation_carusel_vn">
+                                <div class="owl_presentation owl-carousel owl-theme">
+                                    <div class="after_before_row overflow_hidden">
+                                        <div class="radius_mini">
+                                            <div class="twentytwenty-container">
+                                                <!-- The before image is first -->
+                                                <img src="img/img_smile_before_1l.png" alt="DiDent" />
+                                                <!-- The after image is last -->
+                                                <img src="img/img_smile_before_1r.png" alt="DiDent" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="after_before_row overflow_hidden">
+                                        <div class="radius_mini">
+                                            <div class="twentytwenty-container">
+                                                <!-- The before image is first -->
+                                                <img src="img/img_smile_before_1l.png" alt="DiDent" />
+                                                <!-- The after image is last -->
+                                                <img src="img/img_smile_before_1r.png" alt="DiDent" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="after_before_row overflow_hidden">
+                                        <div class="radius_mini">
+                                            <div class="twentytwenty-container">
+                                                <!-- The before image is first -->
+                                                <img src="img/img_smile_before_1l.png" alt="DiDent" />
+                                                <!-- The after image is last -->
+                                                <img src="img/img_smile_before_1r.png" alt="DiDent" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel_counter"></div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Gets advantages end -->
                 </div>
             </div>
-            <!-- Gets end -->
+            <!-- Presentation End -->
         </main>
         <!--  Main end -->
     </div>
@@ -465,15 +440,7 @@
     <!-- Footer start -->
     <footer>
         <div class="svg_blue">
-            <svg width="100%" height="100%" viewBox="0 0 653 46.107558">
-                <defs>
-                    <path d="M0 30a1789 1789 0 0 1 653 0v304a1823 1823 0 0 1-653 0z" id="a" />
-                    <clipPath>
-                        <path stroke-width="1.00255799" d="M-1-1h656v47H-1z" />
-                    </clipPath>
-                </defs>
-                <use xlink:href="#a" width="100%" height="100%" fill-rule="evenodd" />
-            </svg>
+            <svg width="100%" height="100%" viewBox="0 0 653 46.107558"><defs><path d="M0 30a1789 1789 0 0 1 653 0v304a1823 1823 0 0 1-653 0z" id="a"/><clipPath  ><path stroke-width="1.00255799" d="M-1-1h656v47H-1z"/></clipPath></defs><use xlink:href="#a" width="100%" height="100%" fill-rule="evenodd"/></svg>
         </div>
         <div class="footer_row background_blue row">
             <div class="container">
@@ -529,11 +496,7 @@
                                     <span class="step_item_vn">
                                         <span class="row step_item align-items-center">
                                             <span class="step_item_img radius_right">
-                                                <img class="lozad is-loaded"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                    data-src="img/dentist_photo_2l.png"
-                                                    data-srcset="img/dentist_photo_2l.png, img/dentist_photo_2l@2x.png 2x"
-                                                    alt="DiDent">
+                                                <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_2l.png" data-srcset="img/dentist_photo_2l.png, img/dentist_photo_2l@2x.png 2x" alt="DiDent">
                                             </span>
                                             <span class="step_item_desk">
                                                 <span class="doctor_name">Dr. Katherin Black</span>
@@ -550,11 +513,7 @@
                                     <span class="step_item_vn">
                                         <span class="row step_item align-items-center">
                                             <span class="step_item_img radius_right">
-                                                <img class="lozad is-loaded"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                    data-src="img/dentist_photo_3l.png"
-                                                    data-srcset="img/dentist_photo_3l.png, img/dentist_photo_3l@2x.png 2x"
-                                                    alt="DiDent">
+                                                <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_3l.png" data-srcset="img/dentist_photo_3l.png, img/dentist_photo_3l@2x.png 2x" alt="DiDent">
                                             </span>
                                             <span class="step_item_desk">
                                                 <span class="doctor_name">Dr. Helen Bristen</span>
@@ -571,11 +530,7 @@
                                     <span class="step_item_vn">
                                         <span class="row step_item align-items-center">
                                             <span class="step_item_img radius_right">
-                                                <img class="lozad is-loaded"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                    data-src="img/main_dentistl.png"
-                                                    data-srcset="img/main_dentistl.png, img/main_dentistl@2x.png 2x"
-                                                    alt="DiDent">
+                                                <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/main_dentistl.png" data-srcset="img/main_dentistl.png, img/main_dentistl@2x.png 2x" alt="DiDent">
                                             </span>
                                             <span class="step_item_desk">
                                                 <span class="doctor_name">Dr. Michael Johnson</span>
@@ -593,11 +548,7 @@
                                     <span class="step_item_vn">
                                         <span class="row step_item align-items-center">
                                             <span class="step_item_img radius_right">
-                                                <img class="lozad is-loaded"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                    data-src="img/dentist_photo_4l.png"
-                                                    data-srcset="img/dentist_photo_4l.png, img/dentist_photo_4l@2x.png 2x"
-                                                    alt="DiDent">
+                                                <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_4l.png" data-srcset="img/dentist_photo_4l.png, img/dentist_photo_4l@2x.png 2x" alt="DiDent">
                                             </span>
                                             <span class="step_item_desk">
                                                 <span class="doctor_name">Dr. Brett Armstrong</span>
@@ -614,11 +565,7 @@
                                     <span class="step_item_vn">
                                         <span class="row step_item align-items-center">
                                             <span class="step_item_img radius_right">
-                                                <img class="lozad is-loaded"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                    data-src="img/dentist_photo_5l.png"
-                                                    data-srcset="img/dentist_photo_5l.png, img/dentist_photo_5l@2x.png 2x"
-                                                    alt="DiDent">
+                                                <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_5l.png" data-srcset="img/dentist_photo_5l.png, img/dentist_photo_5l@2x.png 2x" alt="DiDent">
                                             </span>
                                             <span class="step_item_desk">
                                                 <span class="doctor_name">Dr. Jennifer Wilson</span>
@@ -635,11 +582,7 @@
                                     <span class="step_item_vn">
                                         <span class="row step_item align-items-center">
                                             <span class="step_item_img radius_right">
-                                                <img class="lozad is-loaded"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                    data-src="img/dentist_photo_1l.png"
-                                                    data-srcset="img/dentist_photo_1l.png, img/dentist_photo_1l@2x.png 2x"
-                                                    alt="DiDent">
+                                                <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/dentist_photo_1l.png" data-srcset="img/dentist_photo_1l.png, img/dentist_photo_1l@2x.png 2x" alt="DiDent">
                                             </span>
                                             <span class="step_item_desk">
                                                 <span class="doctor_name">Dr. George Wilson</span>
@@ -656,11 +599,7 @@
                                     <span class="step_item_vn">
                                         <span class="row step_item align-items-center">
                                             <span class="step_item_img radius_right">
-                                                <img class="lozad is-loaded"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                    data-src="img/staff_photo_2l.png"
-                                                    data-srcset="img/staff_photo_2l.png, img/staff_photo_2l@2x.png 2x"
-                                                    alt="DiDent">
+                                                <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/staff_photo_2l.png" data-srcset="img/staff_photo_2l.png, img/staff_photo_2l@2x.png 2x" alt="DiDent">
                                             </span>
                                             <span class="step_item_desk">
                                                 <span class="doctor_name">Dr. Nicole Green</span>
@@ -677,11 +616,7 @@
                                     <span class="step_item_vn">
                                         <span class="row step_item align-items-center">
                                             <span class="step_item_img radius_right">
-                                                <img class="lozad is-loaded"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                                    data-src="img/staff_photo_1l.png"
-                                                    data-srcset="img/staff_photo_1l.png, img/staff_photo_1l@2x.png 2x"
-                                                    alt="DiDent">
+                                                <img class="lozad is-loaded" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/staff_photo_1l.png" data-srcset="img/staff_photo_1l.png, img/staff_photo_1l@2x.png 2x" alt="DiDent">
                                             </span>
                                             <span class="step_item_desk">
                                                 <span class="doctor_name">Dr. John Ridwell</span>

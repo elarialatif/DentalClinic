@@ -110,6 +110,7 @@ jQuery(document).ready(function() {
     owl.owlCarousel({
         loop: true,
         autoWidth: false,
+        mouseDrag: false,
         margin: 30,
         lazyLoad: true,
         dots: true,

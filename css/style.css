@@ -2163,6 +2163,7 @@ header .menu {
     float: right;
     width: 75%;
     padding-top: 3px;
+    background-color: white;
 }
 
 #dentists {
@@ -2172,6 +2173,7 @@ header .menu {
 #dentists {
     position: relative;
     margin-top: 0px;
+    background: var(--theme_color_three);
 }
 
 #dentists .part_line {
@@ -2219,7 +2221,7 @@ header .menu {
 #dentists .ui-state-active a:link,
 #dentists .ui-state-active a:visited {
     border: none;
-    background-color: var(--theme_color_three);
+    background-color: white;
 }
 
 #dentists .ui-state-hover a,
@@ -2250,6 +2252,7 @@ header .menu {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
     background: white;
     border-radius: 4px;
+    min-height: 270px;
 }
 
 .tabs .tab_content .tab_content_l {
@@ -2286,7 +2289,7 @@ header .menu {
 }
 
 .tabs .tab_content .tab_content_desk {
-    margin-top: 50px;
+    margin: 20px 0;
     color: #656565;
 }
 

@@ -1365,6 +1365,8 @@ header .menu {
     float: right;
     width: 17.8%;
     padding-left: 30px;
+    position: relative;
+    top: 1rem;
 }
 
 .header_btn .btn_white {
@@ -1495,6 +1497,9 @@ header .menu {
     width: 62%;
     padding-top: 8px;
     float: right;
+    position: relative;
+    top: 1.5rem;
+    text-align: center;
 }
 
 
@@ -6431,7 +6436,7 @@ body .datepicker_row .ui-datepicker .ui-datepicker-next span {
     padding: 1px;
     top: 0;
     left: 0;
-    font-family: 'icomoon' !important;
+    font-family: 'FontAwesome' !important;
     text-indent: 0;
     speak: none;
     font-style: normal;
@@ -6456,12 +6461,12 @@ body .datepicker_row .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
 }
 
 body .datepicker_row .ui-datepicker .ui-datepicker-prev span:before {
-    content: "\e904";
+    content: "\f100";
     font-size: 42px;
 }
 
 body .datepicker_row .ui-datepicker .ui-datepicker-next span:before {
-    content: "\e91c";
+    content: "\f101";
     font-size: 42px;
 }
 

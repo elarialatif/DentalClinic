@@ -5385,7 +5385,7 @@ ul.wysihtml5-toolbar>li {
     position: relative;
 }
 
-#g_images .edit_image input[type=file] {
+#g_images .edit_image input {
     position: absolute;
     width: 100%;
     opacity: 0;
@@ -5409,7 +5409,8 @@ ul.wysihtml5-toolbar>li {
     color: #fff;
 }
 
-#g_images .addSlide {
+#g_images .addSlide,
+#g_images .editSlide {
     border: 1px solid #9854ca;
     background-color: #9854ca;
     color: #fff;
@@ -5418,36 +5419,43 @@ ul.wysihtml5-toolbar>li {
 #g_images .add_image_row:hover,
 #g_images .add_image_row:focus,
 #g_images .addSlide:focus,
-#g_images .addSlide:hover {
+#g_images .addSlide:hover,
+#g_images .editSlide:focus,
+#g_images .editSlide:hover {
     outline: none;
     background-color: #52288f;
 }
 
-#g_images #addSlideModal .modal-body {
+#g_images #addSlideModal .modal-body,
+#g_images #editSlideModal .modal-body {
     width: 80%;
     margin: auto;
 }
 
-#g_images #addSlideModal .slide_text label {
+#g_images #addSlideModal .slide_text label,
+#g_images #editSlideModal .slide_text label {
     width: 29%;
 }
 
-#g_images #addSlideModal .slide_text input {
+#g_images #addSlideModal .slide_text input n #g_images #editSlideModal .slide_text input {
     width: 70%;
     height: 30px;
 }
 
-#g_images #addSlideModal .slide_text input:focus {
+#g_images #addSlideModal .slide_text input:focus,
+#g_images #editSlideModal .slide_text input:focus {
     outline-color: #52288f;
 }
 
-#g_images #addSlideModal .image_show {
+#g_images #addSlideModal .image_show,
+#g_images #editSlideModal .image_show {
     position: relative;
     margin-top: 3rem;
     height: 300px;
 }
 
-#g_images #addSlideModal .image_show input {
+#g_images #addSlideModal .image_show input,
+#g_images #editSlideModal .image_show input {
     position: absolute;
     width: 29%;
     height: 40px;
@@ -5455,7 +5463,8 @@ ul.wysihtml5-toolbar>li {
     opacity: 0;
 }
 
-#g_images #addSlideModal .image_show button.choose {
+#g_images #addSlideModal .image_show button.choose,
+#g_images #editSlideModal .image_show button.choose {
     width: 29%;
     text-align: center;
     height: 40px;
@@ -5465,7 +5474,8 @@ ul.wysihtml5-toolbar>li {
     display: inline-block;
 }
 
-#g_images #addSlideModal .image_show img {
+#g_images #addSlideModal .image_show img,
+#g_images #editSlideModal .image_show img {
     width: 70%;
     display: inline-block;
     float: right;

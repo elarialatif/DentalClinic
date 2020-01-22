@@ -204,7 +204,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="box-header">
                                     <h3 class="box-title">Slideshow Images</h3>
                                     <input type="button" class="add_image_row" value="Add Slide" data-toggle="modal" data-target="#addSlideModal">
-                                    <!-- Modal -->
+                                    <!-- Add Slide Modal -->
                                     <div class="modal fade" id="addSlideModal" role="dialog">
                                         <div class="modal-dialog">
 
@@ -212,7 +212,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">Modal Header</h4>
+                                                    <h4 class="modal-title">Add Slide</h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="slide_text">
@@ -235,7 +235,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                                         </div>
                                     </div>
-                                    <!-- /.Modal -->
+                                    <!-- /.Add Slide Modal -->
+
                                 </div>
                                 <!-- /.box-header -->
                                 <div class="box-body table-responsive no-padding">
@@ -248,26 +249,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                 <th>Edit Slide </th>
                                                 <th>Delete Slide </th>
                                             </tr>
-                                            <!-- <tr>
-                                                <td class="number">1</td>
-                                                <td class="image_show">
-                                                    <img src="./dist/img/user1-128x128.jpg" alt="">
-                                                </td>
-                                                <td>
-                                                    degufaeuifqeguirdqgewdi
-                                                </td>
-                                                <td class="edit_image">
-                                                    <input type="file" name="file" value="Upload Image" />
-                                                    <span class="label label-primary">
-                                                        <i class="fa fa-edit"></i>
-                                                    </span>
-                                                </td>
-                                                <td class="delete_image">
-                                                    <span class="label label-danger">
-                                                        <i class="fa fa-trash"></i>
-                                                    </span>
-                                                </td>
-                                            </tr> -->
+                                            <!-- Edit Slide Modal -->
+                                            <div class="modal fade" id="editSlideModal" role="dialog">
+                                                <div class="modal-dialog">
+
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Edit Slide</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="slide_text">
+                                                                <label for="descriptionSlide">
+                                                            Enter Text Of Slide
+                                                        </label>
+                                                                <input type="text" name="descriptionSlide" id="descriptionSlide">
+                                                            </div>
+                                                            <div class="image_show">
+                                                                <input type="file" name="file" value="Upload Image" />
+                                                                <button type="button" class="btn choose">Edit Image</button>
+                                                                <img src="" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn editSlide" data-dismiss="modal">Edit</button>
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- /.Edit Slide Modal -->
                                         </tbody>
                                     </table>
                                 </div>
